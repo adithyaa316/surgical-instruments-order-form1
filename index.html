@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Excel Template</title>
+</head>
+<body>
+
+    <h2>Enter Data to Fill Excel Template</h2>
+
+    <!-- Form for user input -->
+    <form id="orderForm">
+        <label for="surgeonName">Surgeon Name:</label><br>
+        <input type="text" id="surgeonName" name="surgeonName" required><br><br>
+
+        <label for="costCenter">Cost Center:</label><br>
+        <input type="text" id="costCenter" name="costCenter" required><br><br>
+
+        <!-- Button to trigger download -->
+        <button type="button" onclick="downloadData()">Download Data</button>
+    </form>
+
+    <script>
+        function downloadData() {
+            // Get the input values
+            const surgeonName = document.getElementById('surgeonName').value;
+            const costCenter = document.getElementById('costCenter').
